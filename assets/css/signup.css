@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+body {
+  background-image: url("../img/login.jpg");
+  background-color:black;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top:10px;
+}
+
+.card {
+  background:#000e00;
+  padding: 30px;
+  border-radius: 5%;
+  box-shadow: 1px 1px 1px 0px #bbffbe;
+  width: 90%;
+  max-width: 400px;
+}
+
+
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color:#d3d3d3;
+}
+
+.label-float input {
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #d3d3d3;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 4px 4px 0 0;
+  transition: border-color 0.3s;
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.label-float label{
+  color: #d3d3d3;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #d3d3d3;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: green;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0d009c;
+  transform: scale(1.02);
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+.fa-eye{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #0d009c;
+}
+
+#msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#msgSuccess{
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+h3
+{
+  text-align: center;
+  color:#d3d3d3;
+}
+li{
+  list-style-type: none;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+li a {
+  text-decoration: none;
+  color:#d3d3d3;
+}
+p{
+  color: white;
+}
+@media (max-width: 500px) {
+  .card {
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 14px;
+    width: 100%;
+  }
+}

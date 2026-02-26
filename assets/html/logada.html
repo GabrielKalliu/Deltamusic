@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalliu - Music</title>
+
+  <!-- Ícones -->
+  <script src="https://kit.fontawesome.com/6fa123eb69.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="../css/logada.css">
+</head>
+
+<body>
+
+
+  <div class="cabecalho">
+    <div class="nav-logo">
+      <i class="fa-brands fa-spotify"></i>
+      <i class="fa-solid fa-house"></i>    
+    </div>
+
+    <div class="search-bar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="O que quer ouvir">
+    </div>
+
+    <nav class="menu-links">
+      <ul>
+        <li><a href="#">Explorar o Premium</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container">
+    <nav class="sidebar">
+      <div class="nav-library">
+        <p>Sua Biblioteca</p>
+        <i class="fa-solid fa-plus"></i>
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+      </div>
+
+      <div class="nav-playlist">
+        <button>Playlists</button>
+        <button>Artistas</button>
+        <button>Álbuns</button>
+      </div>
+
+      <section class="content">
+        <h2>Rádios Populares</h2>
+        <div class="radio-grid"></div>
+      </section>
+    </nav>
+    <main>
+
+      <section class="content">
+        <h2>Músicas em alta</h2>
+        <div class="artists-grid"></div>
+
+        <h2>Artistas Populares</h2>
+        <div class="albums-grid"></div>
+
+        <h2>Singles e Álbuns que todo mundo gosta</h2>
+        <div class="artists-grid"></div>
+
+        <h2>Estações de Rádio Populares</h2>
+        <div class="artists-grid"></div>
+
+        <h2>Paradas em destaque</h2>
+        <div class="artists-grid"></div>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Empregos</a></li>
+              <li><a href="#">For the Record</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Comunidades</h4>
+            <ul>
+              <li><a href="#">Para Artistas</a></li>
+              <li><a href="#">Desenvolvedores</a></li>
+              <li><a href="#">Publicidade</a></li>
+              <li><a href="#">Investidores</a></li>
+              <li><a href="#">Fornecedores</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Links úteis</h4>
+            <ul>
+              <li><a href="#">Suporte</a></li>
+              <li><a href="#">Aplicativo móvel grátis</a></li>
+              <li><a href="#">Popular por país</a></li>
+              <li><a href="#">Importar suas músicas</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Planos</h4>
+            <ul>
+              <li><a href="#">Premium Individual</a></li>
+              <li><a href="#">Premium Duo</a></li>
+              <li><a href="#">Premium Família</a></li>
+              <li><a href="#">Premium Universitário</a></li>
+              <li><a href="#">Free</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <div class="music-player">
+    <div class="player-info">
+      <img id="cover" src="../_img/rap_metal.jpg" alt="cover">
+      <div>
+        <p id="music-title">Rap Metal</p>
+        <p id="music-artist">Kalliu</p>
+      </div>
+    </div>
+
+    <div class="player-controls">
+      <button id="prev"><i class="fa-solid fa-backward"></i></button>
+      <button id="play"><i class="fa-solid fa-play"></i></button>
+      <button id="next"><i class="fa-solid fa-forward"></i></button>
+    </div>
+
+    <div class="player-progress">
+      <span id="current-time">0:00</span>
+      <input type="range" id="progress" value="0">
+      <span id="duration">0:00</span>
+    </div>
+
+    <audio id="audio"></audio>
+  </div>
+
+  <script src="../js/logada.js"></script>
+  <script type="module" src="../js/player.js"></script>
+
+</body>
+</html>
